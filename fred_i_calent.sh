@@ -11,8 +11,12 @@ read -p "Tens 3 intents per endivinar el nombre del 1 al 10: " x
 if [ $x -eq $adivina ]
 then echo "eureka!!"
 break
-else
-echo "has usat el intent ${i}"
+elif [ $x -gt $adivina ]
+then
+echo "Calent, has usat el intent ${i}"
+elif [ $x -lt $adivina ]
+then
+echo "Fred, has usat el intent ${i}"
 fi
 done
 if [[ $x -ne $adivina ]]
