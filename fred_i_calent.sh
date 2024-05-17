@@ -7,24 +7,24 @@ adivina=$(( ( RANDOM % 10 )  + 1 ))
 ########################################################
 i=1
 for i in {1..3} ;do
-let intents=4-i
-read -p "Tens ${intents} intents per endivinar el nombre del 1 al 10: " x
-if [ $x -eq $adivina ]
-then echo "eureka!!"
-break
-elif [ $x -gt $adivina ]
-then
-echo "Calent, has usat el intent ${i}"
-elif [ $x -lt $adivina ]
-then
-echo "Fred, has usat el intent ${i}"
-fi
+    let intents=4-i
+    read -p "Tens ${intents} intents per endivinar el nombre del 1 al 10: " x
+    if [ $x -eq $adivina ]
+        then echo "eureka!!"
+        break
+    elif [ $x -gt $adivina ]
+        then
+        echo "Calent, has usat el intent ${i}"
+    elif [ $x -lt $adivina ]
+        then
+        echo "Fred, has usat el intent ${i}"
+    fi
 done
 if [[ $x -ne $adivina ]]
-then
+    then
 ########################################################
 # Fi del teu codi
 ########################################################
 
-echo "El nombre que havies d'adivinar era: ${adivina}"
+    echo "El nombre que havies d'adivinar era: ${adivina}"
 fi
