@@ -1,6 +1,6 @@
 #!/bin/bash
 nombre=10
-i=
+i=0
 sumatori=1
 while [[ i -le nombre ]]
 do
