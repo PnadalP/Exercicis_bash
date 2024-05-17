@@ -7,4 +7,4 @@ do
     sumatori=$((sumatori+i))
     i=$((i+1))
 done
-echo "el sumatori de 10 es: $((sumatori-1))"
+echo "el sumatori de $nombre es: $((sumatori-1))"
