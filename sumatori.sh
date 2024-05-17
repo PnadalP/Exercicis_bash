@@ -1,5 +1,5 @@
 #!/bin/bash
-nombre=10
+nombre=${1}
 i=0
 sumatori=1
 while [[ i -le nombre ]]
