@@ -28,8 +28,7 @@ then
 else
     #S'introdueix l'usuari i contrassenya
     echo "${USERNAME}:${PASSWORD}" | chpasswd
-    echo "Usuari ${USERNAME} creat correctament"
-    echo "La contrassenya de l'usuari ${USERNAME} es ${PASSWORD}"
+    echo "Usuari ${USERNAME} creat correctament amb la contrassenya ${PASSWORD}"
     #Aqui he fet que les contrassenyes es guardin a un arxiu per no oblidarme de elles
     echo "La contrassenya de l'usuari ${USERNAME} es ${PASSWORD}" >> Passwords_usuaris.txt
     echo "Quan entris com aquest usuari haurás de canviar la contrassenya"
