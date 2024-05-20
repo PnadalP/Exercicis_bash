@@ -26,14 +26,14 @@ then
     exit 1
 #Es crea l'usuari correctament
 else
-#S'introdueix l'usuari i contrassenya
-echo "${USERNAME}:${PASSWORD}" | chpasswd
-echo "Usuari ${USERNAME} creat correctament"
-echo "La contrassenya de l'usuari ${USERNAME} es ${PASSWORD}"
-#Aqui he fet que les contrassenyes es guardin a un arxiu per no oblidarme de elles
-echo "La contrassenya de l'usuari ${USERNAME} es ${PASSWORD}" >> Passwords_usuaris.txt
-echo "Quan entris com aquest usuari haurás de canviar la contrassenya"
-#Feim que l'usuari hagi de canviar la contrassenya quan entri
-chage -d 0 ${USERNAME}
-exit 0
+    #S'introdueix l'usuari i contrassenya
+    echo "${USERNAME}:${PASSWORD}" | chpasswd
+    echo "Usuari ${USERNAME} creat correctament"
+    echo "La contrassenya de l'usuari ${USERNAME} es ${PASSWORD}"
+    #Aqui he fet que les contrassenyes es guardin a un arxiu per no oblidarme de elles
+    echo "La contrassenya de l'usuari ${USERNAME} es ${PASSWORD}" >> Passwords_usuaris.txt
+    echo "Quan entris com aquest usuari haurás de canviar la contrassenya"
+    #Feim que l'usuari hagi de canviar la contrassenya quan entri
+    chage -d 0 ${USERNAME}
+    exit 0
 fi
