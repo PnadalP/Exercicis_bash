@@ -1,3 +1,5 @@
 .env
-ip_publica.txt
+ip*
 Passwords_usuaris.txt
+users.txt
+logs.txt
