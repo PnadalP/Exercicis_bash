@@ -3,7 +3,7 @@
 if [[ ${#} -ne 1 ]]
 then
 echo "has de tenir un parametre"
-exit1
+exit 1
 else
 source .env
 MENSAJE=${1}
