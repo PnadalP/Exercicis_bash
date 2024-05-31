@@ -40,4 +40,5 @@ echo "El nombre mínim generat es ${MINIM}"
 #Usant el sumatori feim la mitjana
 MITJANA=$((SUMA/QUANTS))
 echo "La mitjana dels numeros generats es ${MITJANA}"
+#Enviam la mitjana al bot de telegram
 /home/pau/bin/telegram_bot_2.sh "${MITJANA}"
