@@ -11,7 +11,7 @@ then
 else
     QUANTS=10
 fi
-URL="https://www.random.org/integers/?num=${QUANTS}&min=1&max=100&col=1&base=10&format=plain&rnd=new"
+URL="https://php.enguillem.es/random.php?num=${QUANTS}&min=1&max=100&col=1&base=10&format=plain&rnd=new"
 NUMEROS=$(curl ${URL})
 SUMA=0
 MAXIM=0
@@ -38,5 +38,5 @@ echo "La suma dels numeros generats es ${SUMA}"
 echo "El nombre maximo generat es ${MAXIM}"
 echo "El nombre mínim generat es ${MINIM}"
 #Usant el sumatori feim la mitjana
-MITJANA=$((SUMA/${1}))
+MITJANA=$((SUMA/QUANTS))
 echo "La mitjana dels numeros generats es ${MITJANA}"
