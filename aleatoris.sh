@@ -5,12 +5,12 @@ then
     QUANTS=${1}
 elif [[ ${#} -gt 1 ]]
 then
-    #Cridam a la url amb el paràmetre donat
     echo "Només pot haver un paràmetre"
     exit 1
 else
     QUANTS=10
 fi
+#Cridam a la url amb el paràmetre donat
 URL="https://php.enguillem.es/random.php?num=${QUANTS}&min=1&max=100&col=1&base=10&format=plain&rnd=new"
 NUMEROS=$(curl ${URL})
 SUMA=0
